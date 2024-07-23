@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(session({
-    secret: 'your_secret_key',
+    secret: '8b94f0359dfcd0163905d95d5e4b83aaa7e67e354c7d3b3d03e0d0b4c7c49dcfa9254829b1a575dde0c0196433135671d647e762979ff0f39940fae7e372265a',
     resave: false,
     saveUninitialized: true
 }));
