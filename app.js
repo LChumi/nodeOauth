@@ -2,7 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
-const passport = require('passport');
+const passport = require('./passport'); // Importa el archivo passport.js
+
 
 const app = express();
 
@@ -21,6 +22,9 @@ app.set('view engine', 'ejs');
 
 const puerto = process.env.PORT || 3000;
 
+app.get('/', (req, res) => {
+    res.send('Bienvenido a la aplicación de autenticación con Google');
+});
 /**
  * Rutas 
  */

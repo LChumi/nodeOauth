@@ -1,4 +1,3 @@
-require('dotenv').config(); // Esto carga las variables de entorno desde el archivo .env
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
